@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    min-height: 800px;
+    background: url("../img/background.png");
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+h1,h2,h3,h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+p{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+}
+.logo{
+    float: left;
+    padding: 30px;
+}
+nav ul{
+    list-style-image: url("../img/listdot.png");
+    position: absolute;
+    right: 20px;
+    top: 40vh;
+    margin-right: 10px;
+}
+nav ul li{
+    padding-bottom: 5px;
+}
+nav ul li:first-child{
+    list-style-image: url("../img/listdotlarge.png");
+    margin-left: 1.5px;
+}
+nav ul li:hover{
+    list-style-image: url("../img/listdotlarge.png");
+    cursor: pointer;
+}
+.submitform{
+    margin: 0 auto;
+    padding-top: 34vh;
+    width: 50%;
+    min-width: 550px;
+    text-align: center;
+}
+.submitform form{
+    margin-left: 20%;
+}
+.submitform h2{
+    font-size: 60px;
+    padding: 10px;
+}
+.submitform p{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    padding-bottom: 40px;
+}
+.submitform input[type="text"]{
+    height: 50px;
+    border: transparent;
+    border-radius: 25px 0 0 25px;
+    width: 50%;
+    padding-left: 30px;
+    float: left;
+}
+.submitform input[type="text"]::placeholder{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+.submitform input[type="submit"]{
+    max-height: 50px;
+    height: 50px;
+    border: transparent;
+    border-radius: 0 25px 25px 0;
+    background-color: #20ab50;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    width: 25%;
+    color: white;
+    float: left;
+}
+.submitform input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #0450cd;
+}
+
