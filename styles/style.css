@@ -41,10 +41,10 @@ p{
 nav ul{
     /*list-style-image: url("../img/listdot.png");*/
     list-style-type: none;
-    position: absolute;
     right: 20px;
     top: 40vh;
-    margin-right: 10px;
+    position: fixed;
+    z-index: 1;
 }
 nav ul li{
     padding-bottom: 5px;
@@ -136,8 +136,46 @@ nav ul li{
     height: 100vh;
     width: 100%;
 }
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
+.range h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+.range p{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+}
+.range img{
+    display: block;
+    margin: 0 auto;
+}
 .range{
-    background-color: yellow;
+    position: relative;
+}
+.range .slide{
+    padding-top: 7%;
+}
+.range .slide p{
+    position: absolute;
+    bottom: 13vh;
+    left: 51%;
+    text-align: center;
+}
+.range .slide .name{
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
 }
 .whyus img{
     width: 100%;
