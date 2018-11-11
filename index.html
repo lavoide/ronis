@@ -17,19 +17,19 @@
             <h2>Coming Soon</h2>
             <p>goplae.co.uk is coming soon but in the meantime check out this page
                 and sign up to our newsletter for more information</p>
-            <form action="#" >
+            <form action="#" onsubmit="validateEmail(event)">
                 <input type="text" placeholder="Enter email adress">
                 <input type="submit" value="Sign Up">
             </form>
         </div>
         <nav>
             <ul>
-                <li title="Main page"><a href="#header"><img src="img/listdot.png" alt="*"></a></li>
-                <li title="About Us"><a href="#about"><img src="img/listdot.png" alt="*"></a></li>
-                <li title="Why Us?"><a href="#whyus"><img src="img/listdot.png" alt="*"></a></li>
-                <li title="Where can you find us?"><a href="#where"><img src="img/listdot.png" alt="*"></a></li>
-                <li title="Range"><a href="#range"><img src="img/listdot.png" alt="*"></a></li>
-                <li title="Contacts"><a href="#contacts"><img src="img/listdot.png" alt="*"></a></li>
+                <li title="Main page"><a href="#header"><img class="navigation active" src="img/listdot.png" alt="*"></a></li>
+                <li title="About Us"><a href="#about"><img class="navigation" src="img/listdot.png" alt="*"></a></li>
+                <li title="Why Us?"><a href="#whyus"><img class="navigation" src="img/listdot.png" alt="*"></a></li>
+                <li title="Where can you find us?"><a href="#where"><img class="navigation" src="img/listdot.png" alt="*"></a></li>
+                <li title="Range"><a href="#range"><img class="navigation" src="img/listdot.png" alt="*"></a></li>
+                <li title="Contacts"><a href="#contacts"><img class="navigation" src="img/listdot.png" alt="*"></a></li>
             </ul>
         </nav>
     </header>
@@ -48,12 +48,13 @@
         <img src="img/Max_Black_Push_Bike.png" alt="boyonbike">
     </div>
     <div class="review1" id="reviews">
+        <img src="img/Emme_Pink_Scooter.png" alt="girlonbike">
         <div class="content">
             <h3>What Our customers say</h3>
-            <p> like them because they are very comfy and soft inside. They are really light which means I run faster. I like the cool straps that I can change</p>
-            <p>Charlie (age 8)</p>
-        </div>
-        <img src="img/Emme_Pink_Scooter.png" alt="girlonbike">
+        <p> like them because they are very comfy and soft inside. They are really light which means I run faster. I like the cool straps that I can change</p>
+        <p>Charlie (age 8)</p>
+    </div>
+
     </div>
     <div class="review2">
         <div class="content">
@@ -278,7 +279,7 @@
     <div class="signup">
         <h2>Be the first to see goplae.co.uk</h2>
         <p>Sign Up for the latest news</p>
-        <form action="#" >
+        <form action="#" onsubmit="validateEmail(event)">
             <input type="text" placeholder="Enter email adress">
             <input type="submit" value="Sign Up">
         </form>

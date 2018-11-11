@@ -32,4 +32,14 @@ function timedCount() {
     t=setTimeout("timedCount()",timeOut);
 }
 
-
+function validateEmail(event) {
+    event.preventDefault();
+    email = event.target[0].value;
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(String(email).toLowerCase())){
+        alert('Thank you!'); event.target[0].value = '';
+    } else {
+        alert('Enter correct email!');
+        event.target[0].value = '';
+    }
+}

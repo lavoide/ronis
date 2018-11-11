@@ -48,13 +48,20 @@ nav ul{
 nav ul li{
     padding-bottom: 5px;
 }
-
+nav ul li .active{
+    height: 13px;
+    margin-left: -2px;
+}
 .submitform{
     margin: 0 auto;
     padding-top: 34vh;
     width: 50%;
     min-width: 550px;
     text-align: center;
+}
+.submitform form, .signup form{
+    max-width: 550px;
+    margin: 0 auto;
 }
 .submitform h2{
     font-size: 60px;
@@ -199,15 +206,17 @@ nav ul li{
     padding-top: 7%;
 }
 .range .slide p{
+    display: block;
     position: absolute;
     bottom: 13vh;
-    left: 51%;
+    left: 50%;
     text-align: center;
 }
 .range .slide .name{
+    display: block;
     position: absolute;
     bottom: 20vh;
-    left: 50%;
+    text-align: center;
 }
 .range .slide{
     padding-bottom: 25vh;
@@ -369,10 +378,6 @@ nav ul li{
     padding-bottom: 35px;
 }
 
-.signup form{
-    max-width: 550px;
-    margin: 0 auto;
-}
 footer{
     height: 5vh;
     width: 100%;
